@@ -5,9 +5,10 @@ This allows >SuperAdmins more control of the server with starfall.
 
 -
 
-Example Code:
+Example Code *(only works when you are SuperAdmin or higher)*:
 ```lua
 --@name Mute everyone
+--@server
 
 unsafe(function()
 	hook.Add("PlayerSay", "MuteEveryone", function()
