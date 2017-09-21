@@ -1,7 +1,6 @@
-
 -- Called next tick so starfall gets loaded before
 timer.Simple(0, function()
-	SF.DefaultEnvironment.unsafe = function(fn)
+	SF.DefaultEnvironment.glua = function(fn)
 		if not SF.instance.player:IsSuperAdmin() then return end
 
 		setfenv(fn, _G)
